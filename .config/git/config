@@ -1,0 +1,48 @@
+[user]
+	name = dexzh
+	email = dexzhdev@proton.me
+[init]
+	defaultBranch = main
+[alias]
+	st = status -s
+	lg = log --graph --oneline
+	amend = commit --amend --no-edit
+	pushf = push --force-with-lease
+[core]
+	pager = delta
+[push]
+	autoSetupRemote = true
+	useForceIfIncludes = true
+[pull]
+	rebase = true
+[fetch]
+	prune = true
+	pruneTags = true
+[rebase]
+	autoStash = true
+	autoSquash = true
+[diff]
+	algorithm = histogram
+[merge]
+	conflictstyle = zdiff3
+[commit]
+	cleanup = scissors
+[color "status"]
+	changed = yellow
+[include]
+	path = ~/.config/git/delta/catppuccin.gitconfig
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	features = catppuccin-mocha
+	syntax-theme = kanagawa
+	tabs = 4
+	line-numbers = true
+	navigate = true
+	hyperlinks = true
+	# side-by-side = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

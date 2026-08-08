@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -xeuo pipefail
+
+sudo rate-mirrors --allow-root --protocol=https --save /etc/pacman.d/mirrorlist arch
+
+sudo rate-mirrors --allow-root --protocol=https --save /etc/pacman.d/cachyos-mirrorlist cachyos
+sudo cp -f '/etc/pacman.d/cachyos-mirrorlist' '/etc/pacman.d/cachyos-v3-mirrorlist'
+sudo cp -f '/etc/pacman.d/cachyos-mirrorlist' '/etc/pacman.d/cachyos-v4-mirrorlist'
+sudo sed -i 's|/$arch/|/$arch_v3/|g' '/etc/pacman.d/cachyos-v3-mirrorlist'
+sudo sed -i 's|/$arch/|/$arch_v4/|g' '/etc/pacman.d/cachyos-v4-mirrorlist'
+
+# sudo rate-mirrors --allow-root --protocol=https --save /etc/pacman.d/chaotic-mirrorlist chaotic-aur
+# sudo rate-mirrors --allow-root --protocol=https --save /etc/pacman.d/blackarch-mirrorlist blackarch

@@ -1,0 +1,8 @@
+[mgr]
+sort_by = "natural"
+linemode = "size"
+# linemode = "mtime"
+show_hidden = true
+
+[preview]
+tab_size = 4

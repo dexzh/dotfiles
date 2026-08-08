@@ -1,0 +1,4 @@
+binds {
+    Pause hotkey-overlay-title="Microphone Mute Toggle" { spawn "dms" "ipc" "call" "audio" "micmute"; }
+    Super+Alt+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
+}
