@@ -19,7 +19,7 @@ if status is-interactive
     set -g fish_color_search_match --background=$selection
 
     set -g fish_pager_color_prefix blue --bold
-    set -g fish_pager_color_description cyan
+    set -g fish_pager_color_description cyan --italic
     set -g fish_pager_color_progress brmagenta
 
     # pure prompt
