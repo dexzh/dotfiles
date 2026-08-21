@@ -9,8 +9,8 @@ return {
     opts = {
         defaults = {
             winblend = 0,
-            prompt_prefix = " ",
-            selection_caret = " ",
+            prompt_prefix = "  ",
+            selection_caret = "  ",
 
             sorting_strategy = "ascending",
             layout_strategy = "horizontal",
