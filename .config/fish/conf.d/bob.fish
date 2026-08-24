@@ -1,1 +1,1 @@
-source "$HOME/.local/share/bob/env/env.fish"
+fish_add_path -g ~/.local/share/bob/nvim-bin

@@ -4,8 +4,8 @@ if status is-interactive
     set -gx MANPAGER "nvim +Man!"
     set -gx SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket
     set -gx RIPGREP_CONFIG_PATH ~/.config/ripgrep/config
-    set -gx GOPATH ~/.local/share/go
-    fish_add_path -g ~/.local/bin ~/.cargo/bin $GOPATH/bin
+    set -gx GOPATH ~/.local/share/go/
+    fish_add_path -g ~/.local/bin/ ~/.cargo/bin/ $GOPATH/bin/
 
     # colors
     set -g fish_color_command blue
