@@ -10,17 +10,13 @@ return {
             end,
         },
 
-        float = {
-            max_width = 0.8,
-            max_height = 0.8,
-        },
+        cleanup_delay_ms = 0,
 
         preview_win = {
             win_options = { wrap = false },
         },
 
         keymaps = {
-            ["q"] = "actions.close",
             ["<C-h>"] = "actions.parent",
             ["<C-l>"] = "actions.select",
         },
