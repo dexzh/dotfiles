@@ -22,7 +22,7 @@ return {
         },
     },
     keys = {
-        { "<leader>o", "<cmd>Oil --preview<cr>", desc = "Oil" },
+        { "<leader>o", "<cmd>Oil<cr>", desc = "Oil" },
     },
     init = function()
         vim.g.loaded_netrwPlugin = 1
