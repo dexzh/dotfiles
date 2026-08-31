@@ -45,8 +45,5 @@ if status is-interactive
 
     # aliases and abbrs
     alias l "eza -MF --icons --group-directories-first --smart-group"
-    abbr la "l -a"
-    abbr ll "l -l"
-    abbr lla "l -la"
     alias ff "fastfetch --disable-linewrap"
 end
