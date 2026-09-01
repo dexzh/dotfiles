@@ -9,13 +9,10 @@ return {
                 return name == ".."
             end,
         },
-
         cleanup_delay_ms = 0,
-
         preview_win = {
             win_options = { wrap = false },
         },
-
         keymaps = {
             ["<C-h>"] = "actions.parent",
             ["<C-l>"] = "actions.select",
