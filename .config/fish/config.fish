@@ -44,6 +44,12 @@ if status is-interactive
     end
 
     # aliases and abbrs
-    alias l "eza -MF --icons --group-directories-first --smart-group"
     alias ff "fastfetch --disable-linewrap"
+    alias l "eza -MF --group-directories-first --smart-group"
+
+    # plugins
+    fundle plugin "pure-fish/pure"
+    # fundle plugin "acomagu/fish-async-prompt"
+    fundle plugin "jorgebucaran/autopair.fish"
+    fundle init
 end
