@@ -1,7 +1,7 @@
 -- rust-analyzer is enabled by rustaceanvim
 vim.lsp.enable({
     "lua_ls",
-    "gopls",
+    -- "gopls",
     "ruff",
     "ty",
 })

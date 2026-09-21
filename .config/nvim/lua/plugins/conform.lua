@@ -5,7 +5,7 @@ return {
         formatters_by_ft = {
             lua = { "stylua" },
             python = { "ruff_format", "ruff_organize_imports" },
-            go = { "gofumpt", "goimports" },
+            -- go = { "gofumpt", "goimports" },
             rust = { "rustfmt" },
         },
         format_on_save = function(bufnr)

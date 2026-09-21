@@ -23,7 +23,7 @@ if status is-interactive
     set -g fish_pager_color_progress brmagenta
 
     # pure prompt
-    set -g async_prompt_functions _pure_prompt_git
+    # set -g async_prompt_functions _pure_prompt_git
     set -g pure_color_primary cyan
     set -g pure_color_success white
     set -g pure_enable_single_line_prompt true
