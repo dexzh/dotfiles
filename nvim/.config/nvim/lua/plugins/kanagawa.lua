@@ -3,7 +3,7 @@ return {
     priority = 1000,
     opts = {
         -- commentStyle = { italic = false },
-        keywordStyle = { italic = false },
+        -- keywordStyle = { italic = false },
         transparent = true,
         colors = { theme = { all = { ui = { bg_gutter = "none" } } } },
         overrides = function(colors)
