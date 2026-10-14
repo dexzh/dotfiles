@@ -14,7 +14,7 @@ vim.diagnostic.config({
 })
 
 -- enable inlay hints by default
-vim.lsp.inlay_hint.enable(true)
+-- vim.lsp.inlay_hint.enable(true)
 
 vim.keymap.set({ "n", "x" }, "<leader>h", function()
     vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())

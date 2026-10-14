@@ -28,8 +28,8 @@ if status is-interactive
     set -g pure_color_success white
     set -g pure_enable_single_line_prompt true
     set -g pure_symbol_prompt "\$"
-    set -g pure_show_prefix_root_prompt true
-    set -g pure_threshold_command_duration 1
+    # set -g pure_show_prefix_root_prompt true
+    # set -g pure_threshold_command_duration 1
     set -g pure_show_jobs true
 
     set -g fish_greeting ""
