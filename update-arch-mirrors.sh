@@ -4,7 +4,6 @@ if (( EUID != 0 )); then
     echo "ERROR: script must be run as root" >&2
     exit 1
 fi
-set -x
 
 rate-mirrors --allow-root --protocol=https --save /etc/pacman.d/mirrorlist arch
 

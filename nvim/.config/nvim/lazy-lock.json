@@ -11,7 +11,7 @@
   "lualine.nvim": { "branch": "master", "commit": "221ce6b2d999187044529f49da6554a92f740a96" },
   "matchparen.nvim": { "branch": "main", "commit": "b39cc21d3b56cfd88610bc3ee9878a39744bc73f" },
   "nvim-autopairs": { "branch": "master", "commit": "3172f40c16563db871a58f20d205c710ad782311" },
-  "nvim-treesitter": { "branch": "main", "commit": "1a4f47b03dfe92d28de7d5654c67327ef008c9e6" },
+  "nvim-treesitter": { "branch": "main", "commit": "29212d826054bb2948fa9d3a99eca9bf6a050eb2" },
   "nvim-treesitter-context": { "branch": "master", "commit": "8decd73460d26ef0a0befb745d022dd1fc2c38b8" },
   "nvim-web-devicons": { "branch": "master", "commit": "ec309a0eaff6ea967e58c275996155ab5c16938d" },
   "oil.nvim": { "branch": "master", "commit": "d3733d933833a0e59b813ecec99341527adf0c28" },
