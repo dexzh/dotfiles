@@ -8,20 +8,13 @@ return {
         colors = { theme = { all = { ui = { bg_gutter = "none" } } } },
         overrides = function(colors)
             local theme = colors.theme
-            local palette = colors.palette
             local makeDiagnosticColor = function(color)
                 local c = require("kanagawa.lib.color")
                 return { fg = color, bg = c(color):blend(theme.ui.bg, 0.95):to_hex() }
             end
 
             return {
-                TelescopeTitle = { fg = theme.ui.special, bold = true },
-                TelescopePromptNormal = { bg = palette.winterBlue },
-                TelescopePromptBorder = { bg = palette.winterBlue, fg = palette.winterBlue },
-                TelescopeResultsNormal = { bg = theme.ui.bg_m2 },
-                TelescopeResultsBorder = { bg = theme.ui.bg_m2, fg = theme.ui.bg_m2 },
-                TelescopePreviewNormal = { bg = theme.ui.bg_m3 },
-                TelescopePreviewBorder = { bg = theme.ui.bg_m3, fg = theme.ui.bg_m3 },
+                TelescopeBorder = { bg = "none" },
                 Pmenu = { bg = theme.ui.bg_p1, fg = theme.ui.shade0 },
                 PmenuSel = { bg = theme.ui.bg_p2, fg = "none" },
                 PmenuSbar = { bg = theme.ui.bg_m1 },
@@ -32,7 +25,8 @@ return {
                 DiagnosticVirtualTextHint = makeDiagnosticColor(theme.diag.hint),
                 WinSeparator = { fg = theme.ui.float.fg_border },
                 IblIndent = { fg = theme.ui.bg_p1 },
-                ["@variable.builtin"] = { italic = false },
+                -- ["@variable.builtin"] = { italic = false },
+                ["@lsp.type.variable"] = { link = "@variable" },
                 DiagnosticUnnecessary = {},
             }
         end,
