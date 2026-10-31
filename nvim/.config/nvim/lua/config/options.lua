@@ -14,7 +14,6 @@ vim.opt.cursorlineopt = "number"
 vim.opt.showmode = false
 vim.opt.signcolumn = "yes"
 vim.opt.winborder = "solid"
-vim.opt.pumblend = 5
 vim.opt.laststatus = 3
 vim.opt.list = true
 vim.opt.listchars = { tab = "  ", trail = "·" }
