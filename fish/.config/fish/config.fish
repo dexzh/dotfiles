@@ -1,11 +1,12 @@
 if status is-interactive
     # variables
-    set -gx EDITOR nvim
+    set -gx EDITOR "nvim"
     set -gx MANPAGER "nvim +Man!"
-    set -gx SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket
-    set -gx RIPGREP_CONFIG_PATH ~/.config/ripgrep/config
-    set -gx GOPATH ~/.local/share/go/
-    fish_add_path -g ~/.local/bin/ ~/.cargo/bin/ $GOPATH/bin/
+    set -gx PACMAN_AUTH "doas"
+    set -gx SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/ssh-agent.socket"
+    set -gx RIPGREP_CONFIG_PATH "~/.config/ripgrep/config"
+    set -gx GOPATH "~/.local/share/go/"
+    fish_add_path -g "~/.local/bin/" "~/.cargo/bin/" "$GOPATH/bin/"
 
     # colors
     set -g fish_color_command blue
@@ -23,13 +24,11 @@ if status is-interactive
     set -g fish_pager_color_progress brmagenta
 
     # pure prompt
-    # set -g async_prompt_functions _pure_prompt_git
+    set -g async_prompt_functions _pure_prompt_git
     set -g pure_color_primary cyan
     set -g pure_color_success white
     set -g pure_enable_single_line_prompt true
     set -g pure_symbol_prompt "\$"
-    # set -g pure_show_prefix_root_prompt true
-    # set -g pure_threshold_command_duration 1
     set -g pure_show_jobs true
 
     set -g fish_greeting ""
@@ -44,12 +43,5 @@ if status is-interactive
     end
 
     # aliases and abbrs
-    alias ff "fastfetch --disable-linewrap"
     alias l "eza -MF --group-directories-first --smart-group"
-
-    # plugins
-    fundle plugin "pure-fish/pure"
-    # fundle plugin "acomagu/fish-async-prompt"
-    fundle plugin "jorgebucaran/autopair.fish"
-    fundle init
 end
