@@ -13,10 +13,10 @@ return {
     },
     settings = {
         Lua = {
-            -- hint = {
-            --     enable = true,
-            --     arrayIndex = "Disable",
-            -- },
+            hint = {
+                enable = true,
+                arrayIndex = "Disable",
+            },
             runtime = { version = "LuaJIT" },
             workspace = {
                 library = { vim.env.VIMRUNTIME },
