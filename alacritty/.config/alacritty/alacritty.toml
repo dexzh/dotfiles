@@ -1,0 +1,11 @@
+[general]
+import = [ "~/.config/alacritty/themes/kanagawa_wave.toml" ]
+
+[window]
+padding = { x = 3, y = 3 }
+dynamic_padding = true
+opacity = 0.95
+
+[font]
+normal.family = "Maple Mono Normal NF"
+size = 12

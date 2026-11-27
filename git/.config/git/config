@@ -1,0 +1,53 @@
+[user]
+	name = dexzh
+	email = dexzhdev@proton.me
+[init]
+	defaultBranch = main
+[alias]
+	st = status -s
+	lg = log --graph --oneline
+	amend = commit --amend --no-edit
+	pushf = push --force-with-lease
+[push]
+	autoSetupRemote = true
+	useForceIfIncludes = true
+[pull]
+	rebase = true
+[fetch]
+	prune = true
+	pruneTags = true
+[rebase]
+	autoStash = true
+	autoSquash = true
+[diff]
+	algorithm = histogram
+[merge]
+	conflictstyle = zdiff3
+[commit]
+	cleanup = scissors
+[color "status"]
+	changed = yellow
+[include]
+	path = ~/.config/git/delta/themes.gitconfig
+[core]
+	pager = delta
+[delta]
+	features = mellow-barbet
+	syntax-theme = kanagawa
+	plus-style = syntax "#2B3328"
+	minus-style = syntax "#43242B"
+	plus-emph-style = syntax "#49443C"
+	minus-emph-style = syntax "#49443C"
+	line-numbers-plus-style = "#76946A"
+	line-numbers-minus-style = "#C34043"
+
+	tabs = 4
+	line-numbers = true
+	side-by-side = false
+	# navigate = true
+	# hyperlinks = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
